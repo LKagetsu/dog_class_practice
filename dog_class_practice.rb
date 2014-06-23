@@ -1,5 +1,5 @@
 class Dogs(name, breed, leg_count)
-	def initilize (name, breed, leg_count)
+	def initialize (name, breed, leg_count) #what Dogs will do when first created
 		@name = name
 		@breed = breed
 		@leg_count = legs
@@ -7,15 +7,14 @@ class Dogs(name, breed, leg_count)
 
 
 
-	def name
+	def name #reading definition for name variable
 		@name
 	end
 
-	def name (name)
+	def name (name) #writing definition for name variable (allows you to change the 'value' of the name)
 		@name = name
 	end
 	
-
 
 
 	def breed
@@ -47,3 +46,4 @@ end
 
 
 puts Dog.new("Rover", "lab", 4)
+puts Dog.bark
